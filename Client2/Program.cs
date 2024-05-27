@@ -21,8 +21,8 @@ namespace Client2
             IConfiguration config = builder.Build();
 
             // Get API keys
-            string API_KEY = config["Api_Connection:API_KEY"];
-            string API_SECRET = config["Api_Connection:API_SECRET"];
+            string API_KEY = config["API_Keys:API_KEY"];
+            string API_SECRET = config["API_Keys:API_SECRET"];
 
             // First, open the API connection
             var client = Alpaca.Markets.Environments.Paper
