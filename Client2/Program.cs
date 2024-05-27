@@ -23,6 +23,7 @@ namespace Client2
             // Get API keys
             string API_KEY = config["Api_Connection:API_KEY"];
             string API_SECRET = config["Api_Connection:API_SECRET"];
+
             // First, open the API connection
             var client = Alpaca.Markets.Environments.Paper
                 .GetAlpacaTradingClient(new SecretKey(API_KEY, API_SECRET));
